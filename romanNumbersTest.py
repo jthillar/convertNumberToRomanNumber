@@ -1,9 +1,9 @@
-#!/usr/bin/python
 # -*-coding: utf-8 -*
 
+from romanNumbers import convertNumberToRomanNumber
 import pandas as pd
 import unittest
-import romanNumbers
+
 
 class RomanNumberTest(unittest.TestCase):
 
@@ -12,7 +12,7 @@ class RomanNumberTest(unittest.TestCase):
         df = pd.read_csv('arabe_romain.csv', encoding='utf-8', sep=';', dtype={'arabe':int, 'romain':str})
         for idx, row in df.iterrows():
 
-            r = romanNumbers.convertNumberToRomanNumber(row['arabe'])
+            r = convertNumberToRomanNumber(row['arabe'])
             self.assertEqual(r, row['romain'])
 
 unittest.main()

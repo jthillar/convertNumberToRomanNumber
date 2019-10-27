@@ -1,4 +1,3 @@
-#!/usr/bin/python
 # -*-coding: utf-8 -*
 import sys
 
@@ -55,6 +54,6 @@ if __name__ == "__main__":
                 print('Error input : int must be between 1 and 3999')
             else:
                 result = convertNumberToRomanNumber(n)
-                print(result)    
+                print(result)
         except ValueError as v:
             print('Error input : must enter int as argument')
