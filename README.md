@@ -1,12 +1,17 @@
 # convertNumberToRomanNumber
 
-## Install Pandas for testing  
-* pip install -r requirements.txt
-
+## Install Pandas for testing 
+```bash 
+pip install -r requirements.txt
+```
 ## Run test 
-* python romanNumbers.py
+```bash
+python romanNumbers.py
+```
 
 ## Run File 
-* python romanNumbers.py number_to_convert
+```bash
+python romanNumbers.py number_to_convert
+```
 
 The run file will print the result as roman number 
